@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Preventative Maintenance Reduces Commercial HVAC Downtime and Operating Costs</title>
+    <meta name="description" content="Discover how preventative maintenance strategies reduce commercial HVAC downtime, lower operating costs, and extend equipment lifespan through proactive system care.">
+    <meta name="keywords" content="commercial HVAC maintenance, preventative maintenance, HVAC downtime, operating costs, facility management, HVAC efficiency">
+    <meta property="og:title" content="How Preventative Maintenance Reduces Commercial HVAC Downtime">
+    <meta property="og:description" content="Learn how proactive HVAC maintenance reduces costs and improves reliability in commercial facilities.">
+    <meta property="og:type" content="article">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #3b82f6;
+            --accent: #60a5fa;
+            --dark: #1e293b;
+            --light: #f1f5f9;
+            --white: #ffffff;
+            --gray: #64748b;
+            --success: #10b981;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
+            color: var(--dark);
+            background: linear-gradient(to bottom, #f8fafc 0%, var(--white) 100%);
+            line-height: 1.7;
+        }
+
+        /* Hero Header */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            padding: 5rem 2rem 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                linear-gradient(30deg, transparent 48%, rgba(255,255,255,0.05) 50%, transparent 52%),
+                linear-gradient(-30deg, transparent 48%, rgba(255,255,255,0.05) 50%, transparent 52%);
+            background-size: 40px 40px;
+        }
+
+        .hero-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        h1 {
+            font-size: 3.2rem;
+            color: white;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            color: rgba(255,255,255,0.9);
+            font-weight: 300;
+            max-width: 800px;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            background: white;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 1rem 0;
+        }
+
+        .breadcrumb-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+
+        .breadcrumb a {
+            color: var(--secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--primary);
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1100px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        /* Two Column Layout */
+        .layout {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 3rem;
+        }
+
+        /* Article Content */
+        article {
+            background: white;
+            padding: 3.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+        }
+
+        .intro-text {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: var(--dark);
+            margin-bottom: 2.5rem;
+            padding-left: 1.5rem;
+            border-left: 4px solid var(--accent);
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin: 3rem 0 1.5rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        h2::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--secondary);
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+        }
+
+        h3 {
+            font-size: 1.6rem;
+            color: var(--dark);
+            margin: 2rem 0 1rem;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 1.06rem;
+            margin-bottom: 1.5rem;
+            color: #475569;
+            line-height: 1.8;
+        }
+
+        /* Key Benefits Cards */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+
+        .benefit-card {
+            background: linear-gradient(135deg, var(--light) 0%, white 100%);
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .benefit-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--secondary), var(--accent));
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(30, 58, 138, 0.15);
+            border-color: var(--secondary);
+        }
+
+        .benefit-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--secondary), var(--accent));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .benefit-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.8rem;
+        }
+
+        .benefit-text {
+            font-size: 0.98rem;
+            color: var(--gray);
+            margin: 0;
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border-left: 5px solid var(--secondary);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2.5rem 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            color: var(--dark);
+            font-weight: 500;
+        }
+
+        /* Stats Box */
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+
+        .stat-item {
+            background: white;
+            border: 2px solid var(--light);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .stat-item:hover {
+            border-color: var(--secondary);
+            transform: scale(1.05);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.95rem;
+            color: var(--gray);
+            font-weight: 500;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: sticky;
+            top: 2rem;
+            height: fit-content;
+        }
+
+        .sidebar-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+            margin-bottom: 2rem;
+        }
+
+        .sidebar-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .sidebar-nav {
+            list-style: none;
+        }
+
+        .sidebar-nav li {
+            margin-bottom: 1rem;
+        }
+
+        .sidebar-nav a {
+            color: var(--gray);
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: block;
+            padding: 0.6rem 1rem;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .sidebar-nav a:hover {
+            background: var(--light);
+            color: var(--primary);
+            transform: translateX(5px);
+        }
+
+        /* CTA Box */
+        .cta-box {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .cta-box h3 {
+            color: white;
+            font-size: 1.2rem;
+            margin: 0 0 1rem 0;
+        }
+
+        .cta-box p {
+            color: rgba(255,255,255,0.9);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: var(--primary);
+            padding: 0.8rem 1.8rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .cta-button:hover {
+            background: var(--light);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        /* Links */
+        article a {
+            color: var(--secondary);
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid var(--accent);
+            transition: all 0.3s;
+            padding-bottom: 1px;
+        }
+
+        article a:hover {
+            color: var(--primary);
+            border-bottom-color: var(--primary);
+        }
+
+        /* Section Divider */
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+            margin: 3rem 0;
+            opacity: 0.6;
+        }
+
+        /* List Styling */
+        article ul {
+            margin: 1.5rem 0;
+            padding-left: 1.5rem;
+        }
+
+        article ul li {
+            margin-bottom: 0.8rem;
+            color: #475569;
+            position: relative;
+            padding-left: 1rem;
+        }
+
+        article ul li::marker {
+            color: var(--secondary);
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        footer p {
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 0.5rem;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid var(--accent);
+        }
+
+        footer a:hover {
+            color: white;
+            border-bottom-color: white;
+        }
+
+        /* Progress Bar */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--secondary), var(--accent));
+            width: 0%;
+            z-index: 1000;
+            transition: width 0.1s;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .layout {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: relative;
+                top: 0;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 1.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            .subtitle {
+                font-size: 1.1rem;
+            }
+
+            article {
+                padding: 2.5rem 2rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            .benefits-grid,
+            .stats-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            article {
+                padding: 2rem 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>How Preventative Maintenance Reduces Commercial HVAC Downtime and Operating Costs</h1>
+            <p class="subtitle">Discover why proactive system care is the key to reliability, efficiency, and long-term cost savings in commercial facilities.</p>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="breadcrumb-content">
+            <a href="/">Home</a> / <a href="/resources">Resources</a> / <span>HVAC Preventative Maintenance</span>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="layout">
+            <!-- Article -->
+            <article itemscope itemtype="http://schema.org/Article">
+                <meta itemprop="headline" content="How Preventative Maintenance Reduces Commercial HVAC Downtime and Operating Costs">
+                <meta itemprop="description" content="Comprehensive guide to preventative maintenance strategies for commercial HVAC systems.">
+                <meta itemprop="datePublished" content="2024-12-18">
+
+                <div class="intro-text">
+                    <p>Preventative maintenance is one of the most effective yet underutilized strategies for controlling operating costs and improving reliability in commercial HVAC systems. In facilities where heating, cooling, and ventilation are mission-critical, reactive repairs often lead to unplanned downtime, inflated expenses, and shortened equipment lifespan. Organizations seeking guidance on professional standards and best practices for commercial HVAC maintenance can reference established resources such as <a href="https://tccmechanical.com/" target="_blank" rel="noopener">commercial HVAC preventative maintenance services</a>, which outline how proactive system care supports long-term building performance.</p>
+                </div>
+
+                <p>Commercial HVAC systems are inherently complex. Unlike residential equipment, they operate for longer hours, serve larger and more diverse spaces, and must adapt to fluctuating occupancy and environmental conditions. These systems include air handlers, rooftop units, chillers, boilers, pumps, controls, sensors, and extensive ductwork. Each component plays a role in maintaining comfort and air quality, and failure in any one area can disrupt the entire system. Preventative maintenance focuses on keeping all of these elements operating within optimal parameters before minor issues escalate into system-wide failures.</p>
+
+                <h2>Key Benefits of Preventative Maintenance</h2>
+
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">⏱️</div>
+                        <div class="benefit-title">Reduced Downtime</div>
+                        <p class="benefit-text">Identify issues early and schedule repairs during off-peak hours to avoid emergency breakdowns.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">💰</div>
+                        <div class="benefit-title">Lower Operating Costs</div>
+                        <p class="benefit-text">Prevent expensive emergency repairs and reduce energy consumption through optimal system performance.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🔧</div>
+                        <div class="benefit-title">Extended Equipment Life</div>
+                        <p class="benefit-text">Proper maintenance reduces wear and delays costly capital replacements by years.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">📊</div>
+                        <div class="benefit-title">Predictable Budgeting</div>
+                        <p class="benefit-text">Plan costs effectively with scheduled maintenance instead of unpredictable emergency expenses.</p>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <h2>Understanding Downtime Prevention</h2>
+
+                <p>One of the primary benefits of preventative maintenance is reduced downtime. Emergency breakdowns often occur at the worst possible time, during peak heating or cooling seasons, when systems are under maximum load. When a major component fails unexpectedly, repairs can take days or even weeks, especially if parts are not immediately available. During this downtime, facilities may experience lost productivity, tenant complaints, or even operational shutdowns. Preventative maintenance identifies early warning signs such as abnormal vibrations, temperature fluctuations, pressure imbalances, or control errors, allowing corrective action to be taken during scheduled service windows rather than during emergencies.</p>
+
+                <div class="highlight-box">
+                    <p>Emergency repairs are almost always more expensive than planned maintenance. After-hours service calls, expedited parts shipping, and temporary cooling or heating solutions all add to unplanned expenses.</p>
+                </div>
+
+                <h2>Impact on Operating Costs</h2>
+
+                <p>Operating costs are another area where preventative maintenance delivers measurable value. Emergency repairs are almost always more expensive than planned maintenance. After-hours service calls, expedited parts shipping, and temporary cooling or heating solutions all add to unplanned expenses. Additionally, systems that operate inefficiently due to dirty coils, clogged filters, or misaligned components consume more energy. Even small inefficiencies can significantly increase utility costs over time, especially in large commercial facilities. Regular maintenance ensures that systems operate as efficiently as possible, reducing energy waste and stabilizing monthly operating budgets.</p>
+
+                <h3>Energy Efficiency Improvements</h3>
+
+                <p>Systems that operate inefficiently due to dirty coils, clogged filters, or misaligned components consume more energy. Even small inefficiencies can significantly increase utility costs over time, especially in large commercial facilities. Regular maintenance ensures that systems operate as efficiently as possible, reducing energy waste and stabilizing monthly operating budgets.</p>
+
+                <div class="section-divider"></div>
+
+                <h2>Equipment Lifespan Extension</h2>
+
+                <p>Equipment lifespan is closely tied to maintenance practices. Commercial HVAC equipment represents a substantial capital investment, and premature replacement can strain financial resources. Components such as compressors, motors, bearings, and heat exchangers experience wear during normal operation. Without routine inspection and servicing, this wear accelerates. Preventative maintenance helps ensure proper lubrication, alignment, airflow, and electrical performance, all of which reduce stress on equipment. Extending the useful life of HVAC assets by even a few years can result in significant long-term savings.</p>
+
+                <h2>Performance Consistency</h2>
+
+                <p>Preventative maintenance also improves system performance consistency. Many facilities struggle with hot and cold spots, inconsistent airflow, or humidity issues that affect occupant comfort. These problems are often symptoms of underlying maintenance issues rather than design flaws. Dampers may be stuck, sensors may be out of calibration, or airflow may be restricted due to debris buildup. Regular system evaluations allow these issues to be corrected before they impact occupants or require costly troubleshooting efforts.</p>
+
+                <div class="section-divider"></div>
+
+                <h2>Risk Management and Compliance</h2>
+
+                <p>From a risk management perspective, preventative maintenance reduces liability and compliance risks. Commercial buildings are subject to various codes, regulations, and indoor air quality standards. Poorly maintained HVAC systems can contribute to inadequate ventilation, moisture problems, or equipment failures that compromise safety. Routine maintenance documentation also provides a record of due diligence, which can be valuable in audits, inspections, or insurance claims.</p>
+
+                <h2>Budget Predictability</h2>
+
+                <p>Another often overlooked benefit is improved predictability in budgeting and planning. Preventative maintenance programs allow organizations to forecast service costs and plan capital expenditures more effectively. Instead of reacting to unexpected failures, facility managers can schedule repairs, upgrades, and replacements based on equipment condition and performance trends. This proactive approach supports long-term asset management strategies and reduces financial volatility.</p>
+
+                <div class="section-divider"></div>
+
+                <h2>Technology Integration</h2>
+
+                <p>Technology has further enhanced the effectiveness of preventative maintenance. Modern commercial HVAC systems often incorporate advanced controls and monitoring capabilities that provide real-time performance data. Trends in temperature, pressure, energy usage, and runtime can reveal inefficiencies or emerging issues. When combined with routine physical inspections, this data allows maintenance teams to make informed decisions and prioritize interventions that deliver the greatest impact.</p>
+
+                <h2>Customized Maintenance Programs</h2>
+
+                <p>It is important to recognize that preventative maintenance is not a one-size-fits-all solution. The appropriate maintenance strategy depends on building type, system configuration, usage patterns, and environmental conditions. Healthcare facilities, for example, have different ventilation and reliability requirements than warehouses or office buildings. A well-designed maintenance program accounts for these variables and adapts over time as building needs change.</p>
+
+                <div class="highlight-box">
+                    <p>Organizations that consistently delay maintenance often experience more frequent breakdowns, higher energy bills, and reduced occupant satisfaction. In contrast, those that invest in preventative maintenance see lower total cost of ownership and more reliable system performance.</p>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <h2>Strategic Value</h2>
+
+                <p>Despite its benefits, preventative maintenance is often deferred due to budget constraints or a lack of awareness. This short-term approach can create a false sense of savings while increasing long-term costs and risk. Facilities that consistently delay maintenance often experience more frequent breakdowns, higher energy bills, and reduced occupant satisfaction. In contrast, organizations that invest in preventative maintenance tend to see lower total cost of ownership and more reliable system performance.</p>
+
+                <p>Preventative maintenance should be viewed as an operational strategy rather than an optional expense. It supports uptime, efficiency, safety, and financial stability across the lifecycle of commercial HVAC systems. By addressing small issues early, facilities can avoid disruptive failures, extend equipment life, and maintain a comfortable and productive environment for occupants.</p>
+
+                <h2>Looking Forward</h2>
+
+                <p>As commercial buildings continue to evolve and energy efficiency expectations increase, the importance of preventative HVAC maintenance will only grow. Organizations that prioritize proactive system care position themselves to manage costs, reduce risk, and support long-term operational success.</p>
+
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-number">30%</div>
+                        <div class="stat-label">Energy Cost Reduction</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50%</div>
+                        <div class="stat-label">Fewer Breakdowns</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5+ yrs</div>
+                        <div class="stat-label">Extended Equipment Life</div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-card">
+                    <h3 class="sidebar-title">📋 Quick Navigation</h3>
+                    <ul class="sidebar-nav">
+                        <li><a href="#benefits">Key Benefits</a></li>
+                        <li><a href="#downtime">Downtime Prevention</a></li>
+                        <li><a href="#costs">Operating Costs</a></li>
+                        <li><a href="#lifespan">Equipment Lifespan</a></li>
+                        <li><a href="#compliance">Risk Management</a></li>
+                        <li><a href="#technology">Technology</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card cta-box">
+                    <h3>Need Professional Maintenance?</h3>
+                    <p>Explore comprehensive preventative maintenance solutions for your facility.</p>
+                    <a href="https://tccmechanical.com/" class="cta-button" target="_blank" rel="noopener">Learn More</a>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Commercial HVAC Resources. Professional Maintenance Solutions.</p>
+        <p><a href="https://tccmechanical.com/" target="_blank" rel="noopener">Visit TCC Mechanical</a></p>
+    </footer>
+
+    <script>
+        // Progress bar
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('.sidebar-nav a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
